@@ -1,0 +1,18 @@
+<div *ngIf="hero" class="row">
+  <div class="col-12">
+    <h2>{{hero.name |uppercase}} Details</h2>
+  </div>
+  <div class="col-6 ml-md-auto mr-md-auto">
+    <div><span>id: </span>{{hero.id}}</div>
+    <div>
+      <label>name:
+        <input [(ngModel)]="hero.name" placeholder="name" />
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="banner">
+      <img src="../assets/{{hero.banner}}" class="banner-image" alt="best banner ever">
+    </div>
+  </div>
+</div>
